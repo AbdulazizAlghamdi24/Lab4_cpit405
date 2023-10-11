@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Auto Parts Order Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Great Auto Parts - Order Form</h2>
+        <form action="submit_order.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="make" placeholder="Make" required>
+                <input type="text" name="model" placeholder="Model" required>
+                <input type="text" name="year" placeholder="Year" required>
+            </div>
+            <div class="form-group">
+                
+                <input type="date" name="order_date" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="spare_part" placeholder="Spare Part" required>
+                <input type="number" name="quantity" placeholder="Quantity" required>
+            </div>
+            <div class="form-group">
+                <textarea name="comment" placeholder="Comment"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
